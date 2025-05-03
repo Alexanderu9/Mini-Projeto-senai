@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/registros.css">
+  <title>Relatórios de Reflorestamento</title>
+</head>
+<body>
+
+  <main>
+    <section id="contenedor">
+      <h2>Buscar registros de reflorestamento</h2>
+      <form id="formulario">
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" placeholder="Digite o nome do usuário">
+
+        <label for="arboles">Tipo de árvore:</label>
+        <select id="arboles">
+          <option value="">-- Todas --</option>
+          <option value="Ipês">Ipês</option>
+          <option value="Angicos">Angicos</option>
+          <option value="Aroeiras">Aroeiras</option>
+          <option value="Jequitibás">Jequitibás</option>
+          <option value="Peroba do campo">Peroba do campo</option>
+        </select>
+
+        <button type="submit" id="boton">Buscar</button>
+      </form>
+
+      <div id="error"></div>
+      <div id="resultados"></div>
+    </section>
+  </main>
+
+  <script src="/assets/js/relatorios.js"></script>
+</body>
+</html>
