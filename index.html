@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Mini-Projeto</title>
+</head>
+<body>
+    <main id="main">
+        <section id="contenedor">
+            <h1>Seja bem-vindo(a), por favor faça seu cadastramento no site de reflorestamento</h1>
+            <form id="formulario">
+                <label for="usuario" id="labelUsuario">Digite seu nome de usuário</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Usuário" required>
+
+                <label for="nomeCompleto" id="labelNomeCompleto">Digite seu nome Completo</label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo" required>
+
+                <label for="email" id="labelEmail">Digite seu email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <label for="idade" id="labelIdade">Digite sua idade</label>
+                <input type="number" id="idade" name="idade" placeholder="Idade" required>
+
+                <label for="password" id="labelPassword">Digite sua nova senha</label>
+                <input type="password" id="password" name="password" placeholder="Senha" required>
+
+                <label for="new-password" id="labelPassword1">Digite novamente sua nova senha</label>
+                <input type="password" id="new-password" name="new-password" placeholder="Digite novamente sua Senha" required>
+
+                <section id="selecao-imagem">
+                    <p>Selecione uma imagem:</p>
+                    <div class="imagens-grid">
+                      <div class="imagem-item">
+                        <label for="imagen1">Pau-Brasil</label>
+                        <img id="imagen1" class="imagen" src="/assets/img/pau-brasil.png" alt="Pau-Brasil" width="80px" data-value="pau-brasil">
+                      </div>
+                      <div class="imagem-item">
+                        <label for="imagen2">Castanheira</label>
+                        <img id="imagen2" class="imagen" src="/assets/img/castanheira.webp" alt="Castanheira" width="125px" data-value="castanheira">
+                      </div>
+                      <div class="imagem-item">
+                        <label for="imagen3">Peroba-Rosa</label>
+                        <img id="imagen3" class="imagen" src="/assets/img/peroba-rosa.png" alt="Peroba-Rosa" width="125px" data-value="peroba-rosa">
+                      </div>
+                    </div>
+                    <input type="hidden" id="selecionado" name="imagemSelecionada" value="">
+                  </section>
+
+                <button type="submit" id="boton">Ingresar</button>
+
+                <p id="error"></p>
+            </form>
+        </section>
+    </main>
+    <script src="/assets/Js/app.js"></script>
+</body>
+</html>

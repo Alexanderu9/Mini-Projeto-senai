@@ -1,0 +1,125 @@
+/* Fundo geral */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #7bec7b, #eef1ee, #04fa10);
+    /* degradado verde suave */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Contenedor principal (formulario) */
+#contenedor {
+    background: rgba(255, 255, 255, 0.9); /* fundo próprio branco com leve transparência */
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+#contenedor h1 {
+    text-align: center;
+    color: #2e7d32;
+    font-size: 24px;
+}
+
+/* Formulario */
+#formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels */
+#formulario label {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* Inputs */
+#formulario input[type="text"],
+#formulario input[type="password"],
+#formulario input[type="email"],
+#formulario input[type="number"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #a5d6a7;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.imagen {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .imagen.selecionado {
+    border: 2px solid green;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.6);
+  }
+  
+
+/* Botón */
+#boton {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#boton:hover {
+    background-color: #1b5e20;
+}
+
+/* Sección de Imagens */
+#selecao-imagem p {
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.imagens-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.imagem-item {
+    text-align: center;
+}
+
+.imagem-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #2e7d32;
+}
+
+.imagem-item input[type="image"] {
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.imagem-item input[type="image"]:hover {
+    transform: scale(1.05);
+    border-color: #66bb6a;
+}
+
+/* Mensagem de erro */
+#error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
