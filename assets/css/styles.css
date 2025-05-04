@@ -1,8 +1,8 @@
-/* Fundo geral */
+
 body {
     min-height: 100vh;
     background: linear-gradient(135deg, #7bec7b, #eef1ee, #04fa10);
-    /* degradado verde suave */
+
     background-size: cover;
     background-position: center;
     font-family: 'Arial', sans-serif;
@@ -12,9 +12,34 @@ body {
     padding: 20px;
 }
 
-/* Contenedor principal (formulario) */
+#retornar a {
+    text-align: justify;
+    margin-bottom: 20px;
+    display: flex;
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    border: #2e7d32 solid 2px;
+    border-radius: 8px;
+    padding: 5px;
+    width: 120px;
+    background: rgba(255, 255, 255, 0.9) ;
+
+}
+
+#retornar a:hover {
+    color: #388e3c;
+    background: rgb(190, 252, 209);
+}
+
 #contenedor {
-    background: rgba(255, 255, 255, 0.9); /* fundo próprio branco com leve transparência */
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     padding: 30px;
     backdrop-filter: blur(8px);
@@ -29,20 +54,18 @@ body {
     font-size: 24px;
 }
 
-/* Formulario */
 #formulario {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* Labels */
 #formulario label {
     font-weight: bold;
     color: #2e7d32;
 }
 
-/* Inputs */
+
 #formulario input[type="text"],
 #formulario input[type="password"],
 #formulario input[type="email"],
@@ -66,7 +89,6 @@ body {
   }
   
 
-/* Botón */
 #boton {
     background-color: #2e7d32;
     color: white;
@@ -82,7 +104,6 @@ body {
     background-color: #1b5e20;
 }
 
-/* Sección de Imagens */
 #selecao-imagem p {
     font-weight: bold;
     color: #2e7d32;
@@ -117,7 +138,6 @@ body {
     border-color: #66bb6a;
 }
 
-/* Mensagem de erro */
 #error {
     color: red;
     font-size: 14px;

@@ -35,13 +35,15 @@ body {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px #ccc;
-    max-width: 500px;
+    max-width:500px;
     margin: auto;
   }
   
   form input,
   form select {
-    width: 100%;
+    width: 95%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     padding: 8px;
     margin: 10px 0;
   }
